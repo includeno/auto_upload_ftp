@@ -1,0 +1,5 @@
+fastapi==0.115.5
+paramiko==3.5.0
+pydantic==2.10.2
+SQLAlchemy==2.0.23
+uvicorn==0.32.1

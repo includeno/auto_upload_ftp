@@ -1,0 +1,23 @@
+<!-- templates/configs.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h2>同步配置列表</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>名称</th>
+        <th>扫描目录</th>
+        <th>启用</th>
+    </tr>
+    {% for config in configs %}
+    <tr>
+        <td>{{ config.id }}</td>
+        <td>{{ config.name }}</td>
+        <td>{{ config.scan_directory }}</td>
+        <td>{{ '是' if config.enabled else '否' }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
